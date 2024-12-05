@@ -1,23 +1,17 @@
 const fruits = [
-    'Apple', 'Apricot', 'Avocado 🥑', 'Banana', 'Bilberry', 
+    'Apple', 'Apricot', 'Avocado', 'Banana', 
     'Blackberry', 'Blackcurrant', 'Blueberry', 'Boysenberry', 
-    'Currant', 'Cherry', 'Coconut', 'Cranberry', 'Cucumber', 
-    'Custard apple', 'Damson', 'Date', 'Dragonfruit', 'Durian', 
-    'Elderberry', 'Feijoa', 'Fig', 'Gooseberry', 'Grape', 
-    'Raisin', 'Grapefruit', 'Guava', 'Honeyberry', 'Huckleberry', 
-    'Jabuticaba', 'Jackfruit', 'Jambul', 'Juniper berry', 
-    'Kiwifruit', 'Kumquat', 'Lemon', 'Lime', 'Loquat', 
-    'Longan', 'Lychee', 'Mango', 'Mangosteen', 'Marionberry', 
-    'Melon', 'Cantaloupe', 'Honeydew', 'Watermelon', 
-    'Miracle fruit', 'Mulberry', 'Nectarine', 'Nance', 
+    'Cherry', 'Coconut', 'Cranberry', 'Cucumber', 'Dragonfruit',
+    'Elderberry', 'Grape', 'Grapefruit', 'Guava', 'Huckleberry',
+    'Kiwi', 'Lemon', 'Lime', 'Mango', 'Melon', 'Cantaloupe', 'Honeydew', 'Watermelon',  'Nectarine',
     'Olive', 'Orange', 'Clementine', 'Mandarine', 
     'Tangerine', 'Papaya', 'Passionfruit', 'Peach', 
-    'Pear', 'Persimmon', 'Plantain', 'Plum', 
-    'Pineapple', 'Pomegranate', 'Pomelo', 'Quince', 
-    'Raspberry', 'Salmonberry', 'Rambutan', 'Redcurrant', 
-    'Salak', 'Satsuma', 'Soursop', 'Star fruit', 
-    'Strawberry', 'Tamarillo', 'Tamarind', 'Yuzu'
-];
+    'Pear', 'Plantain', 'Plum', 
+    'Pineapple', 'Pomegranate', 'Raspberry', 'Star fruit', 
+    'Strawberry'
+
+input.addEventListener('keyup', searchHandler);
+suggestions.addEventListener('click', useSuggestion);
 
 function search() {
     const input = document.getElementById('search').value.toLowerCase();
